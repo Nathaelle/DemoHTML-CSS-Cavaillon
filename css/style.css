@@ -1,54 +1,61 @@
 /*
 Charte couleurs : 
 principale : rgb(17, 156, 199)
-secondaire : 
+secondaire : rgb(150,150,150)
 textes : rgb(50, 50, 50)
 */
 
+/* Le sélecteur universel permet d'appliquer un style à l'ensemble des éléments HTML
+Il permet ainsi de déterminer un ensemble de règles par défaut
+Il dispose d'un poids minimum, le style sera donc écrasé par n'importe quelle redéfinition */
 * {
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(50,50,50);
-    padding: 0;
-    margin: 0;
+    font-family: Arial, Helvetica, sans-serif; /* Police d'écriture */
+    color: rgb(50,50,50); /* Couleur de la police d'écriture */
+    padding: 0; /* Marges internes (annulation des valeurs par défaut) */
+    margin: 0; /* Marges externes (annulation des valeurs par défaut) */
 }
 
 body {
-    background-color: rgb(228, 223, 216);
-    width: 80%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    background-color: rgb(228, 223, 216); /* Couleur de fond de page */
+    width: 80%; /* Largeur de page */
+    margin: auto; /* Marges automatiques = contenu centré */
+    display: flex; /* Activation des fonctionnalités flexbox */
+    flex-wrap: wrap; /* Autorisation du retour à la ligne pour le contenu */
+    justify-content: space-between; /* Justification du contenu par lignes */
 }
 
 h1, h2 {
-    color: rgb(17, 156, 199);
-    text-transform: uppercase;
-    width: 100%;
-    padding: 1em 0;
+    color: rgb(17, 156, 199); /* Couleur de police (titres) */
+    text-transform: uppercase; /* Titres en majuscule */
+    width: 100%; /* Largeur des titres */
+    padding: 1em 0; /* Marges internes (axe y) */
     /* border: 1px solid red; */
 }
 
 p {
-    padding: 2em;
+    padding: 2em; /* Marges internes */
 }
 
+/* Exemple de sélection par identifiant 
+ATTENTION, l'identifiant doit être unique !! */
 #elem {
-    color: green;
+    color: green; 
 }
 
 /* ----- ZONE PARCOURS ----- */
 
 ul {
-    list-style: none;
-    list-style-type: square;
-    list-style-position: inside;
+    list-style: none; /* Annulation style par défaut de la liste */
+    list-style-type: square; /* Modification du style de "puces" de la liste */
+    list-style-position: inside; /* Puces à l'intérieur des éléments de liste */
 }
 
 ul li {
-    padding: 0.5em 0;
+    padding: 0.5em 0; /* Marges internes (axe y) */
 }
 
+/* Exemple de sélection par classe 
+(une classe est utilisée pour regrouper un ensemble d'éléments sous une même "étiquette") */
 .parcours {
     width: 69%;
     /* border: 1px solid green; */
