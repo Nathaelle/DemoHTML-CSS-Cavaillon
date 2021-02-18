@@ -120,7 +120,7 @@ table .colonne3 {
 }
 
 hr {
-    color: rgb(17, 156, 199);
+    color: #119cc7;
     margin: 10px; /* Marge externes */
 }
 
@@ -151,10 +151,62 @@ hr {
     font-style: italic;
 }
 
-
-
 /* Style appliqué lorsque l'id de l'élément est la cible d'un lien */
 #demo:target {
     color: green;
     display: block;
+}
+
+/* Anim */
+
+.gear {
+    position: relative;
+}
+
+#gear1 {
+    width: 40%;
+    animation-name: gear1;
+    animation-duration: 8s;
+    animation-delay: 0ms;
+    animation-iteration-count: infinite;
+}
+
+#gear1 img {
+    width: 100%;
+}
+
+#gear2 {
+    width: 30%;
+    animation-name: gear2;
+    animation-duration: 8s;
+    animation-delay: 0ms;
+    animation-iteration-count: infinite;
+}
+
+#gear2 img {
+    width: 100%;
+}
+
+@keyframes gear1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes gear2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-180deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
 }
