@@ -62,7 +62,7 @@ ul li {
 }
 
 .intro {
-    font-size: 2em;/* Taille de la police */
+    font-size: 1.5em;/* Taille de la police */
     font-style: italic;/* Police style italique */
     padding: 0.5em; /* Marge interne */
 }
@@ -71,6 +71,10 @@ table, tr, th, td {
     border: 1px solid rgb(17, 156, 199);/* Bordure */
     border-collapse: collapse;/* Fusion des bordures dans le tableau */
     width: 100%; /* Largeur du tableau*/
+}
+
+th, td {
+    padding: 1em;
 }
 
 table .colonne1 {
@@ -100,33 +104,12 @@ table .colonne3 {
     /* border: 1px solid blue; */
 }
 
-hr {
-    color: rgb(17, 156, 199);
-    margin: 10px; /* Marge externes */
-}
-
-.demo {
-    border: 1px solid red;
-    padding: 2em;
-    display: none; /* Element masqué par défaut */
-    position: fixed; /* Hors du flux naturel de la page */
-    top: 20vh; /* Positionné à 20% du haut de la page */
-    width: 80%;
-    background-color: white;
-}
-
-/* Le pseudo élément ::first-line permet d'appliquer un style à la première ligne d'un texte, indépendamment des contraintes liées à la taille du support */
-.demo::first-line {
-    color: red;
-    font-style: italic;
-}
-
 /* On détermine un style "initial" pour nos boutons */
 .butt {
     width: 100%;
     height: 70px;
     border: none;
-    box-shadow: 2px 2px 10px rgb(17, 156, 199);
+    box-shadow: 2px 2px 2px rgb(17, 156, 199);
 }
 
 /* Style appliqué au survol (curseur souris) */
@@ -135,6 +118,40 @@ hr {
     color: white;
     cursor: pointer;
 }
+
+hr {
+    color: rgb(17, 156, 199);
+    margin: 10px; /* Marge externes */
+}
+
+/* ----- Fenêtre modale CSS ----- */
+
+.demo {
+    /* border: 1px solid red; */
+    padding: 2em;
+    display: none; /* Element masqué par défaut */
+    position: fixed; /* Hors du flux naturel de la page */
+    top: 20vh; /* Positionné à 20% du haut de la page */
+    width: 80%;
+    background-color: white;
+}
+
+.demo .closebutt {
+    font-size: 2em;
+    text-align: right; /* Aligner le texte à droite */
+}
+
+.demo .closebutt a {
+    text-decoration: none; /* Supprimer le soulignement */
+}
+
+/* Le pseudo élément ::first-line permet d'appliquer un style à la première ligne d'un texte, indépendamment des contraintes liées à la taille du support */
+.demo::first-line {
+    color: red;
+    font-style: italic;
+}
+
+
 
 /* Style appliqué lorsque l'id de l'élément est la cible d'un lien */
 #demo:target {
