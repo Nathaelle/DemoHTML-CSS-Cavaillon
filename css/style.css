@@ -1,11 +1,19 @@
+/*
+Charte couleurs : 
+principale : rgb(17, 156, 199)
+secondaire : 
+textes : rgb(50, 50, 50)
+*/
+
 * {
-    background-color: black;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(50,50,50);
+    padding: 0;
+    margin: 0;
 }
 
 body {
-    background-color: antiquewhite;
+    background-color: rgb(228, 223, 216);
     width: 80%;
     margin: auto;
     display: flex;
@@ -14,35 +22,36 @@ body {
 }
 
 h1, h2 {
-    color: red;
-    border: 1px solid red;
-}
-
-h1 {
-    width: 100%;
-}
-
-/* h2 {
-    color: blue;
-} */
-
-.textdiff {
-    color: blue;
+    color: rgb(17, 156, 199);
     text-transform: uppercase;
+    width: 100%;
+    padding: 1em 0;
+    /* border: 1px solid red; */
+}
+
+p {
+    padding: 2em;
 }
 
 #elem {
     color: green;
 }
 
-.parcours {
-    width: 69%;
-    border: 1px solid green;
+/* ----- ZONE PARCOURS ----- */
+
+ul {
+    list-style: none;
+    list-style-type: square;
+    list-style-position: inside;
 }
 
-.infos {
-    width: 30%;
-    border: 1px solid blue;
+ul li {
+    padding: 0.5em 0;
+}
+
+.parcours {
+    width: 69%;
+    /* border: 1px solid green; */
 }
 
 .intro {
@@ -51,14 +60,40 @@ h1 {
     padding: 0.5em;
 }
 
-h1, h2 {
-    padding: 1em;
+table, tr, th, td {
+    border: 1px solid rgb(17, 156, 199);
+    border-collapse: collapse;
+    width: 100%;
 }
 
-p {
-    padding: 2em;
+table .colonne1 {
+    width: 60%;
+}
+
+table .colonne2 {
+    width: 20%;
+}
+
+table .colonne3 {
+    width: 20%;
 }
 
 .diplome {
     display: flex;
+}
+
+.diplome p {
+    font-size: 1.5em;
+}
+
+/* ----- ZONE INFOS ----- */
+
+.infos {
+    width: 29%;
+    /* border: 1px solid blue; */
+}
+
+hr {
+    color: rgb(17, 156, 199);
+    margin: 10px;
 }
