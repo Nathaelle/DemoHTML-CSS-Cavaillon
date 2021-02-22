@@ -51,6 +51,57 @@
         <li>Debitis vitae, velit dolorem reiciendis impedit alias eos.</li>
         <li>Porro vitae excepturi magni, numquam pariatur atque aliquid!</li>
     </ul>
+
+    <h2>Contactez-moi</h2>
+
+    <form action="#" method="POST" >
+
+        <fieldset>
+            <legend>Coordonnées personnelles</legend>
+
+            <label for="genre">Civilité</label>
+            <select name="genre" id="genre">
+                <option value="0">M.</option>
+                <option value="1">Mme</option>
+            </select>
+
+            <p>
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom">
+            </p>
+            <p>
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" name="prenom">
+            </p>
+
+            <label for="message">Votre message</label>
+            <textarea name="" id="message" cols="30" rows="10" name="message"></textarea>
+
+            <p>Sélectionnez votre moyen de paiement</p>
+            <label for="cb">Carte bancaire</label>
+            <input type="radio" name="paiement" id="cb" value="cb">
+            <label for="pp">Paypal</label>
+            <input type="radio" name="paiement" id="pp" value="pp">
+  
+            <p>
+                <input type="checkbox">
+                <label for="conditions">J'ai lu et j'accepte les présentes...</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Informations de connexion</legend>
+            <p>
+                <label for="email">Email</label>
+                <input type="text" id="email">
+            </p>
+            <p>
+                <label for="passwd">Mot de passe</label>
+                <input type="password" id="passwd">
+            </p>
+        </fieldset>
+        
+        <input type="submit" value="Soumettre les informations">
+    </form>
     
 </body>
 </html>
