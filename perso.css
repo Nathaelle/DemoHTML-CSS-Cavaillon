@@ -1,9 +1,14 @@
 * {
     color: rgb(94, 82, 82);
-    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
     /* border: 1px solid red; */
+}
+
+body {
+    width: 80%;
+    margin: auto;
 }
 
 h1 {
@@ -13,23 +18,74 @@ h1 {
 
 h2 {
     color:#008b8b;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 50%;
 }
 
 #colonne1 {
-    border: 2px solid blue;
-    background-color: rgb(179, 179, 243);
+    /* border: 2px solid blue;
+    background-color: rgb(179, 179, 243); */
+    width: 65%;
 }
 
 #colonne2 {
-    border: 2px solid purple;
-    background-color: rgb(228, 171, 228);
+    /* border: 2px solid purple;
+    background-color: rgb(228, 171, 228); */
+    width: 35%;
+    padding-left: 20px;
+}
+
+#colonne2 h2, #colonne2 form {
+    margin: 5px;
+}
+
+#colonne2 form fieldset {
+    border: none;
+}
+
+#colonne2 form fieldset legend {
+    color: #008b8b;
+    margin: 10px 0;
 }
 
 .parent {
-    border: 5px solid greenyellow;
+    /* border: 5px solid greenyellow; */
     display: flex;
+}
+
+#colonne2 form .form-element {
+    margin: 10px 0;
+    align-items: center;
+    /* box-shadow: 2px 2px 10px 2px #008b8b; */
+}
+
+#colonne2 form .form-element label, #colonne2 form .form-element select, #colonne2 form .form-element input {
+    display: block;
+}
+
+#colonne2 form .form-element label {
+    width: 35%;
+    background-color: #008b8b;
+    height: 30px;
+    border-radius: 10px 0 0 10px;
+    padding: 10px 0 0 10px;
+    color: white;
+}
+
+#colonne2 form .form-element select, #colonne2 form .form-element input {
+    width: 65%;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    border-bottom: 2px solid #008b8b;
+    padding: 0 0 0 5px;
+}
+
+#colonne2 form .form-element select {
+    height: 40px;
+}
+
+#colonne2 form .form-element input {
+    height: 38px;
 }
 
 /* 

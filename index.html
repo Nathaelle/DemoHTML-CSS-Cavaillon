@@ -56,7 +56,7 @@
                 <li>Porro vitae excepturi magni, numquam pariatur atque aliquid!</li>
             </ul>       
         </div>
-        
+        <hr>
         <div id="colonne2">
             <h2>Contactez-moi</h2>
     
@@ -65,17 +65,18 @@
                 <fieldset>
                     <legend>Coordonnées personnelles</legend>
     
-                    <label for="genre">Civilité</label>
-                    <select name="genre" id="genre">
-                        <option value="0">M.</option>
-                        <option value="1">Mme</option>
-                    </select>
-    
-                    <p>
+                    <div class="parent form-element">
+                        <label for="genre">Civilité</label>
+                        <select name="genre" id="genre">
+                            <option value="0">M.</option>
+                            <option value="1">Mme</option>
+                        </select>
+                    </div>
+                    <p class="parent form-element">
                         <label for="nom">Nom</label>
                         <input type="text" id="nom" name="nom">
                     </p>
-                    <p>
+                    <p class="parent form-element">
                         <label for="prenom">Prénom</label>
                         <input type="text" id="prenom" name="prenom">
                     </p>
@@ -96,11 +97,11 @@
                 </fieldset>
                 <fieldset>
                     <legend>Informations de connexion</legend>
-                    <p>
+                    <p class="parent form-element">
                         <label for="email">Email</label>
                         <input type="text" id="email">
                     </p>
-                    <p>
+                    <p class="parent form-element">
                         <label for="passwd">Mot de passe</label>
                         <input type="password" id="passwd">
                     </p>
